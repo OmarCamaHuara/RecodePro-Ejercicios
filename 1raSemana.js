@@ -31,5 +31,7 @@ class Pessoa{
 }   
 
 var p1 = new Pessoa('Omar')
+var p2 = new Pessoa('Romildo')
 p1.falar('Oi tude bem')
+p2.falar('Nao disse nada, Fala Romildo kkkkk')
 
