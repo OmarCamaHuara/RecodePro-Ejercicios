@@ -4,9 +4,31 @@ body{
 #formasPagamento {
     color: red;
 }
+
+.menu{
+    background-color: red;
+    width: 100%;
+}
 .menu a {
     color: white;
+    text-decoration: none;
 }
-h1 {
-    
+.stock {
+    border: 0;
+    width: 100%;
+    cellpading: 20;
+}
+.stock td {
+    width: 33%;
+}
+#menuStock{
+    -ms-grid-row-span: 5;
+    width: 20%;
+    align-items: top;
+}
+.produtos td {
+    /*width='20%' align="center" valign='bottom'*/
+    width: 20%;
+    align-content: center;
+    vertical-align: bottom;
 }
