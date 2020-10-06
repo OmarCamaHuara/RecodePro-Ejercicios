@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        
+        Criar um primeiro prompt para entrada do valor numérico;
+        Criar um segundo prompt para entrada de outro valor numérico;
+        Testar qual o maior valor;
+        Exibir uma mensagem com o maior valor.
+
+        Primeira atividade:
+        Fazer um programa para que o usuário digite um número e o programa 
+        verifique se os números estão entre o intervalo de valores de 10 e 20.
+        Exibir mensagem “numero esta no intervalo desejado”, caso contrario, “numero invalido”.
+
+        Segunda atividade:
+        Fazer um programa para que o usuário digite um número e o programa verifique se o número é múltiplo de 5. 
+        Exibir mensagem “numero múltiplo de 5”, caso contrario, numero não e múltiplo”.
+
+
+        Quinta atividade:
+        Fazer um programa para que o usuário digite um salário e o programa deverá calcular seu reajuste.
+        Exibir mensagem com o valor do desconto.
+        Salario <= 600 e sexo = “M”, aplicar desconto de 20%
+        Salario <= 1200 e sexo = “F”, aplicar desconto de 20%
+        Salario <= 2000 e sexo “M”, aplicar desconto de 25%
+        Senão, desconto de 30% - ambos os sexos
+
+        Fórmula: desconto = salario * 0.2 ou 0.25 ou 0.30;
+
+
+-->
+    <script>
+        let numero1 = +prompt("Primeir Numero: ");
+        let numero2 = +prompt("Segundo Numero: ");
+        let numero3 = +prompt("Terceir Numero: ")
+        numero1 = parseFloat(numero1)
+        numero2 = parseFloat(numero2)
+        numero3 = parseFloat(numero3)
+
+        let salario = +prompt("Salario: ");
+        let sexo = +prompt("Sexo: ");
+
+        salario = parseFloat(salario)
+
+        if((numero1 > numero2) && (numero1 > numero3)){
+            document.write(`En numero ${numero1} es el mayor`)
+        }else if((numero2 > numero1) && (numero2 > numero3)){
+            document.write(`En numero ${numero2} es el menor`)
+        }else if((numero3 > numero2) && (numero3 > numero1)){
+            document.write(`El numero ${numero3} es el mayor`)
+        }else{
+            document.write(`Tienes algo mas que trabajar`)
+        }
+        
+        document.write(`---------------------`)
+
+        if((numero1 > numero2) && (numero3 > numero2)){
+            document.write(`El segundo numero es el que esta entre el 1ro y el tercer`)
+        }
+
+        document.write(`---------------`)
+
+        if((numero1 % 5) === 0){
+            document.write(`El numero ${numero1} es multiplo de 5`)
+        }
+
+        document.write(`-------------`)
+
+        
+        if(salario <= 600 && sexo === 'M'){
+            document.write(`Seu salario e agora de ${salario-(salario * 0.20)}`)
+        }else if(salario <= 1200 && sexo === 'F'){
+            document.write(`Seu salario e agora de ${(salario-salario * 0.20)}`)
+        }else if(salario <= 2000 && sexo === 'M'){
+            document.write(`Seu salario e agora de ${salario-(salario * 0.25)}`)
+        }else{
+            document.write(`Seu salario e agora de ${salario-(salario * 0.30)}`)
+        }
+
+
+
+
+    </script>
+</body>
+</html>
