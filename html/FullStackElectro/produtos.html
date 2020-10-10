@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Productos - Full Stack Electro</title>
     <link rel="stylesheet" href="./css/style.css"></link>
+    <script src="./js/junciones.js"></script>
 </head>
 <body>
     <!--Inicio do menu-->
@@ -24,16 +25,17 @@
     <section class="categorias">
         <h3>Categorias</h3>
             <ul>
-                <li>Geladerias [3]</li>
-                <li>Fogões [2]</li>
-                <li>Microondas [3]</li>
-                <li>Labadouras de ropas [2]</li>
-                <li>Lava-louças [2]</li>
+                <li onclick="exibirTodo()">Todos [12]</li>
+                <li onclick="exibirCategoria('geladeira')">Geladerias [3]</li>
+                <li onclick="exibirCategoria('fogao')">Fogões [2]</li>
+                <li onclick="exibirCategoria('microondas')">Microondas [3]</li>
+                <li onclick="exibirCategoria('lavaRoupa')">Labadouras de ropas [2]</li>
+                <li onclick="exibirCategoria('lavaLouca')">Lava-louças [2]</li>
             </ul>
     </section>
     <section class="produtos">
-        <div class="box_produto">
-            <img src="./img/Geladera1.png" alt="Geladeira" width='128px'>
+        <div class="box_produto" id="geladeira" style="display: block;">
+            <img src="./img/Geladera1.png" alt="Geladeira" width='128px' onclick="destaque(this)">
                 <br>
                 Geladeira Frost Free Brastemp Side Inverse  540Litros
                 <hr>
@@ -41,8 +43,8 @@
                 <br>
                 <p class="preco">R$5.019,00</p>  
         </div>
-        <div class="box_produto">
-            <img src="./img/Geladera2.png" alt="Geladeira" width='128px'>
+        <div class="box_produto" id="geladeira" style="display: block;">
+            <img src="./img/Geladera2.png" alt="Geladeira" width='128px' onclick="destaque(this)">
                 <br>
                 Geladeira Frost Free Brastemp Side Inverse  600 Litros
                 <hr>
@@ -50,8 +52,8 @@
                 <br>
                 <p class="preco">R$7.019,00</p>  
         </div>
-        <div class="box_produto">
-            <img src="./img/Geladera3.png" alt="Geladeira" width='128px'>
+        <div class="box_produto" id="geladeira" style="display: block;">
+            <img src="./img/Geladera3.png" alt="Geladeira" width='128px' onclick="destaque(this)">
                 <br>
                 Geladeira Frost Free Brastemp Side Inverse  300 Litros
                 <hr>
@@ -59,8 +61,8 @@
                 <br>
                 <p class="preco">R$ 2.019,00</p>  
         </div>
-        <div class="box_produto">
-            <img src="./img/Fogon3.png" alt="Geladeira" width='128px'>
+        <div class="box_produto" id="fogao" style="display: block;">
+            <img src="./img/Fogon3.png" alt="Geladeira" width='128px' onclick="destaque(this)">
                 <br>
                 Fogon de 4 bocas con mesa de madera mais um horno
                 <hr>
@@ -68,8 +70,8 @@
                 <br>
                 <p class="preco">R$ 2.019,00</p> 
         </div>
-        <div class="box_produto">
-            <img src="./img/Fogon2.png" alt="Fogon" width='128px'>
+        <div class="box_produto" id="fogao" style="display: block;">
+            <img src="./img/Fogon2.png" alt="Fogon" width='128px' onclick="destaque(this)">
                 <br>
                 Fogao 4 bocas con mesa de vidrio Samsung
                 <hr>
@@ -77,8 +79,8 @@
                 <br>
                 <p class="preco">R$ 7.019,00</p>
         </div>
-        <div class="box_produto">
-            <img src="./img/microondas.jpg" alt="microondas" width='128px'>
+        <div class="box_produto" id="microondas" style="display: block;">
+            <img src="./img/microondas.jpg" alt="microondas" width='128px' onclick="destaque(this)">
                 <br>
                 Microondas Frost Free Brastemp Side Inverse  50 Litros
                 <hr>
@@ -86,8 +88,8 @@
                 <br>
                 <p class="preco">R$ 1.019,00</p>
         </div>
-        <div class="box_produto">
-            <img src="./img/microndas2.png" alt="microondas" width='128px'>
+        <div class="box_produto" id="microondas" style="display: block;">
+            <img src="./img/microndas2.png" alt="microondas" width='128px' onclick="destaque(this)">
                 <br>
                 Microondas Frost Free Brastemp Side Inverse  40Litros
                 <hr>
@@ -95,8 +97,8 @@
                 <br>
                 <p class="preco">R$ 2.019,00</p>
         </div>
-        <div class="box_produto">
-            <img src="./img/microndas3.png" alt="microondas" width='128px'>
+        <div class="box_produto" id="microondas" style="display: block;">
+            <img src="./img/microndas3.png" alt="microondas" width='128px' onclick="destaque(this)">
                 <br>
                 Microondas Frost Free Brastemp Side Inverse  30 Litros
                 <hr>
@@ -104,8 +106,8 @@
                 <br>
                 <p class="preco">R$ 1.019,00</p> 
         </div>
-        <div class="box_produto">
-            <img src="./img/Labadora.png" alt="Labadora" width='128px'>
+        <div class="box_produto" id="lavaRoupa" style="display: block;">
+            <img src="./img/Labadora.png" alt="Labadora" width='128px' onclick="destaque(this)">
                 <br>
                 Lavadora Frost Free Brastemp Side Inverse  150 Litros
                 <hr>
@@ -113,8 +115,8 @@
                 <br>
                 <p class="preco">R$ 1.019,00</p>  
         </div>
-        <div class="box_produto">
-            <img src="./img/Labadora2.png" alt="Labadora" width='128px'>
+        <div class="box_produto" id="lavaRoupa" style="display: block;">
+            <img src="./img/Labadora2.png" alt="Labadora" width='128px' onclick="destaque(this)">
                 <br>
                 Labadora Frost Free Brastemp Side Inverse  50Litros
                 <hr>
@@ -122,8 +124,8 @@
                 <br>
                 <p class="preco">R$ 900,00</p> 
         </div>
-        <div class="box_produto">
-            <img src="./img/lava.png" alt="Lava-louça" width='128px'>
+        <div class="box_produto" id="lavaLouca" style="display: block;">
+            <img src="./img/lava.png" alt="Lava-louça" width='128px' onclick="destaque(this)">
                 <br>
                 Lava Louça Frost Free Brastemp Side Inverse  54 Litros
                 <hr>
@@ -131,8 +133,8 @@
                 <br>
                 <p class="preco">R$ 2.019,00</p>            
         </div>
-        <div class="box_produto">
-            <img src="./img/dishwasher.jpg" alt="Lava-louça" width='128px'>
+        <div class="box_produto" id="lavaLouca" style="display: block;">
+            <img src="./img/dishwasher.jpg" alt="Lava-louça" width='128px' onclick="destaque(this)">
                 <br>
                 Lava Louça Frost Free Brastemp Side Inverse  540Litros
                 <hr>
