@@ -25,22 +25,3 @@ let destaque = (imagen) => {
         imagen.width = 240
 }
 
-var A = 0; 
-
-var B = 1; 
-
-var R = 0; 
-
- 
-
-for (let contador = 0; contador <= 10; contador++){ 
-
-    R = A + B; 
-
-    A = B; 
-
-    B = R; 
-
-} 
-
-console.log(B - A); 
